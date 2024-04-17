@@ -15,22 +15,30 @@ namespace CapaPresentacion
     {
         //Se instancia la clase de la entidad Categoría
         ClassCategoria categoria = new ClassCategoria();
+        //Crear Variable para almacenar el ID de la Categoría
+        int ID_Categoria = 0;
 
 
         public frmCategoria()
         {
             InitializeComponent();
+            
         }
 
         //Se ejecuta el metodo para mostrar las categorias en el Load del formulario
         private void frmCategoria_Load(object sender, EventArgs e)
         {
             MostrarCategorias();
+            txtNombreCategoria.Enabled = false;
+            btnGuardar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = false;
         }
 
         //Método para mostrar una categoría
         private void MostrarCategorias()
         {
+            dgCategoria.DataSource = null;
             //Se instancia la clase de la entidad Categoría
             ClassCategoria obj = new ClassCategoria();
             //Se asigna al DataGridView el resultado del método ListarCategorias
@@ -45,9 +53,99 @@ namespace CapaPresentacion
             dgCategoria.Columns["ESTADO"].HeaderText = "Estado";
             //Se ajusta el ancho de la columna ESTADO
             dgCategoria.Columns["ESTADO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            
+           
+            //Se bloquea la edición de las columnas
+            dgCategoria.Columns["NOMBRE_CATEGORIA"].ReadOnly = true;
+            dgCategoria.Columns["ESTADO"].ReadOnly = true;
 
-            
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            btnNuevo.Enabled = false;
+            txtNombreCategoria.Enabled = true;
+            txtNombreCategoria.Text = "";
+            btnGuardar.Enabled = true;
+            btnCancelar.Enabled = true;
+            ID_Categoria = 0;
+        }
+
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+           if (ID_Categoria > 0)
+            {
+                //Se llama al método ModificarCategoria de la clase ClassCategoria
+              if(categoria.ModificarCategoria(ID_Categoria, txtNombreCategoria.Text)){
+                    MessageBox.Show("Categoría Modificada Correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Error al Modificar la Categoría");
+                }
+            }
+            else { 
+                //Se llama al método InsertarCategoria de la clase ClassCategoria
+                if (categoria.InsertarCategoria(txtNombreCategoria.Text))
+                {
+                    MessageBox.Show("Categoría Guardada Correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Error al Guardar la Categoría");
+                }
+            }
+            MostrarCategorias();
+            txtNombreCategoria.Enabled = false;
+            txtNombreCategoria.Text = "";
+            btnGuardar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnNuevo.Enabled = true;
+        }
+
+        private void dgCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ID_Categoria = Convert.ToInt32(dgCategoria.CurrentRow.Cells["ID_CATEGORIA"].Value);
+            txtNombreCategoria.Text = dgCategoria.CurrentRow.Cells["NOMBRE_CATEGORIA"].Value.ToString();
+            txtNombreCategoria.Enabled = true;
+            btnGuardar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnCancelar.Enabled = true;
+            btnNuevo.Enabled = false;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (ID_Categoria > 0)
+            {
+                //|Aparece un mensaje de confirmación para eliminar la categoría
+                DialogResult result = MessageBox.Show("¿Está seguro que desea eliminar la categoría?", "Eliminar Categoría", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    //Se llama al método EliminarCategoria de la clase ClassCategoria
+                    if (categoria.EliminarCategoria(ID_Categoria))
+                    {
+                        MessageBox.Show("Categoría Eliminada Correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al Eliminar la Categoría");
+                    }
+                    MostrarCategorias();
+                }
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            btnNuevo.Enabled = true;
+            txtNombreCategoria.Enabled = false;
+            txtNombreCategoria.Text = "";
+            btnGuardar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = false;
+            MostrarCategorias();
         }
     }
 }

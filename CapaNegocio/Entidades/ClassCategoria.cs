@@ -38,5 +38,56 @@ namespace CapaNegocio.Entidades
             }
         }
 
+        //Crear Metodo para Insertar Categorias con Procedimientos Almacenados
+        public bool InsertarCategoria(string nombre)
+        {
+            try
+            {
+                //Se llama al método InsertarCategoria de la clase CDCategoria
+                return cdCategoria.InsertarCategoria(nombre);
+            }
+            catch (Exception ex)
+            {
+                //Se imprime el mensaje de la excepción
+                string error = ex.Message;
+                Console.WriteLine(error);
+                return false;
+            }
+        }
+
+        //Crear Metodo para Modificar Categorias con Procedimientos Almacenados
+        public bool ModificarCategoria(int id, string nombre)
+        {
+            try
+            {
+                //Se llama al método ModificarCategoria de la clase CDCategoria
+                return cdCategoria.ModificarCategoria(id, nombre);
+            }
+            catch (Exception ex)
+            {
+                //Se imprime el mensaje de la excepción
+                string error = ex.Message;
+                Console.WriteLine(error);
+                return false;
+            }
+        }
+
+        //Crear Metodo para Eliminar Categorias con Procedimientos Almacenados
+        public bool EliminarCategoria(int id)
+        {
+            try
+            {
+                //Se llama al método EliminarCategoria de la clase CDCategoria
+                return cdCategoria.EliminarCategoria(id);
+            }
+            catch (Exception ex)
+            {
+                //Se imprime el mensaje de la excepción
+                string error = ex.Message;
+                Console.WriteLine(error);
+                return false;
+            }
+        }
+
     }
 }
