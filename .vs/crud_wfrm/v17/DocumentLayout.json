@@ -1,120 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\source\\repos\\csharp\\crud_wfrm\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\source\\repos\\csharp\\crud_wfrm\\capapresentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\source\\repos\\csharp\\crud_wfrm\\capapresentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|C:\\source\\repos\\csharp\\crud_wfrm\\capanegocio\\entidades\\classcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\entidades\\classcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|C:\\source\\repos\\csharp\\crud_wfrm\\capadatos\\metodos\\cdcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\metodos\\cdcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|C:\\source\\repos\\csharp\\crud_wfrm\\capadatos\\classconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\classconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\source\\repos\\csharp\\crud_wfrm\\capapresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\source\\repos\\csharp\\new\\crud_wfrm\\crud_wfrm\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmCategoria.cs",
-              "DocumentMoniker": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaPresentacion\\frmCategoria.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmCategoria.cs",
-              "ToolTip": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaPresentacion\\frmCategoria.cs",
-              "RelativeToolTip": "CapaPresentacion\\frmCategoria.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAmwEAAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T02:17:33.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmCategoria.cs [Design]",
-              "DocumentMoniker": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaPresentacion\\frmCategoria.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmCategoria.cs",
-              "ToolTip": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaPresentacion\\frmCategoria.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\frmCategoria.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T02:16:00.306Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClassCategoria.cs",
-              "DocumentMoniker": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaNegocio\\Entidades\\ClassCategoria.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\Entidades\\ClassCategoria.cs",
-              "ToolTip": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaNegocio\\Entidades\\ClassCategoria.cs",
-              "RelativeToolTip": "CapaNegocio\\Entidades\\ClassCategoria.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAADwv1kAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T01:40:08.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CDCategoria.cs",
-              "DocumentMoniker": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaDatos\\Metodos\\CDCategoria.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\Metodos\\CDCategoria.cs",
-              "ToolTip": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaDatos\\Metodos\\CDCategoria.cs",
-              "RelativeToolTip": "CapaDatos\\Metodos\\CDCategoria.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAYwIwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T01:26:42.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClassConnection.cs",
-              "DocumentMoniker": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaDatos\\ClassConnection.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\ClassConnection.cs",
-              "ToolTip": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaDatos\\ClassConnection.cs",
-              "RelativeToolTip": "CapaDatos\\ClassConnection.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:50:28.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaPresentacion\\Program.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Program.cs",
-              "ToolTip": "C:\\source\\repos\\csharp\\crud_wfrm\\CapaPresentacion\\Program.cs",
-              "RelativeToolTip": "CapaPresentacion\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:23:14.832Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

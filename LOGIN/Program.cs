@@ -4,22 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace LOGIN
 {
     internal static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //frmPrincipal es el formulario principal de la aplicación
-           // Application.Run(new frmCategoria());
-           //Application.Run(new Formularios.FrmPrincipal());
-           Application.Run(new LOGIN());
+            Application.Run(new Form1());
         }
     }
 }

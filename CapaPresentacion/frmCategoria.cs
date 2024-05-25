@@ -19,6 +19,20 @@ namespace CapaPresentacion
         int ID_Categoria = 0;
 
 
+        //validacion para que el formulario no se repita
+        //se genera una funcion para verificar la intancia de ese formulario, si esta abierto
+        //llamar la funcion si no esta abierto abrirlo
+        private static frmCategoria _instancia=null;
+        public static frmCategoria ventana_unica()
+        {
+            if (_instancia == null)
+            {
+                _instancia = new frmCategoria();
+                return _instancia;
+            }
+            return _instancia;
+        }
+
         public frmCategoria()
         {
             InitializeComponent();
@@ -146,6 +160,16 @@ namespace CapaPresentacion
             btnEliminar.Enabled = false;
             btnCancelar.Enabled = false;
             MostrarCategorias();
+        }
+
+        private void pnlCategoria_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
