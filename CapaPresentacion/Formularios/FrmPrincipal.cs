@@ -18,18 +18,25 @@ namespace CapaPresentacion.Formularios
         }
 
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        { 
             frmCategoria frm =  frmCategoria.ventana_unica();
+            if (frm.IsDisposed)
+            {
+                frm = new frmCategoria();
+            }
             frm.MdiParent = this;
             frm.Show();
             //esta propiedad muestra el formulario  en primer plano
             frm.BringToFront();
-
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormProductos form =  FormProductos.ventana_unica();  
+            if (form.IsDisposed)
+            {
+                form = new FormProductos();
+            }
             form.MdiParent = this;
             form.Show();
             form.BringToFront();

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\ClassCategoria.cs" />
+    <Compile Include="Entidades\ClassMarca.cs" />
+    <Compile Include="Entidades\ClassProducto.cs" />
     <Compile Include="Entidades\ClassUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

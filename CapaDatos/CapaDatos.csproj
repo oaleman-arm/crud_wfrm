@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassConnection.cs" />
+    <Compile Include="Metodos\CDMarca.cs" />
+    <Compile Include="Metodos\CDProducto.cs" />
     <Compile Include="Metodos\CDUsuario.cs" />
     <Compile Include="Metodos\CDCategoria.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
