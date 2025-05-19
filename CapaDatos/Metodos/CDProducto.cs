@@ -27,15 +27,9 @@ namespace CapaDatos.Metodos
                 //Se abre la conexión a la base de datos
                 command.Connection = connection.OpenConnection();
                 //Se crea la consulta SQL
-                command.CommandText = "SELECT P.ID_PRODUCTO, P.DESCRIPCION,M.ID_MARCA, M.NOMBRE_MARCA,C.ID_CATEGORIA, C.NOMBRE_CATEGORIA, P.PRECIO, P.ESTADO " +
-                    "FROM PRODUCTO P " +
-                    "INNER JOIN MARCA M " +
-                    "ON P.ID_MARCA = M.ID_MARCA " +
-                    "INNER JOIN CATEGORIA C " +
-                    "ON P.ID_CATEGORIA = C.ID_CATEGORIA " +
-                    "WHERE P.ESTADO = 1";
+                command.CommandText = "SP_MOSTRAR_PRODUCTO";
                 //Se establece el tipo de comando
-                command.CommandType = CommandType.Text;
+                command.CommandType = CommandType.StoredProcedure;
                 //Se ejecuta el comando y almacena los datos en el lector de datos
                 reader = command.ExecuteReader();
                 // Se carga los datos en la tabla con el lector de datos
@@ -56,7 +50,7 @@ namespace CapaDatos.Metodos
         }
 
         //Crear Metodo para Insertar Productos con Procedimientos Almacenados
-        public bool InsertarProducto(int id_categoria, int id_marca, string descripcion, decimal precio)
+        public bool InsertarProducto(int id_categoria, int id_marca, string descripcion, decimal precio, int stock)
         {
             try
             {
@@ -73,6 +67,7 @@ namespace CapaDatos.Metodos
                 command.Parameters.AddWithValue("@ID_MARCA", id_marca);
                 command.Parameters.AddWithValue("@DESCRIPCION", descripcion);
                 command.Parameters.AddWithValue("@PRECIO", precio);
+                command.Parameters.AddWithValue("@STOCK", stock);
                 //Se ejecuta el comando
                 command.ExecuteNonQuery();
                 //Se cierra la conexión a la base de datos
@@ -90,7 +85,7 @@ namespace CapaDatos.Metodos
         }
 
         //Crear Metodo para Modificar Productos con Procedimientos Almacenados
-        public bool ModificarProducto(int id_producto, int id_categoria, int id_marca, string descripcion, decimal precio)
+        public bool ModificarProducto(int id_producto, int id_categoria, int id_marca, string descripcion, decimal precio, int stock)
         {
             try
             {
@@ -99,7 +94,7 @@ namespace CapaDatos.Metodos
                 //Se abre la conexión a la base de datos
                 command.Connection = connection.OpenConnection();
                 //Se crea la consulta SQL
-                command.CommandText = "SP_MODIFICAR_PRODUCTO";
+                command.CommandText = "SP_EDITAR_PRODUCTO";
                 //Se establece el tipo de comando
                 command.CommandType = CommandType.StoredProcedure;
                 //Se agregan los parámetros necesarios
@@ -108,6 +103,7 @@ namespace CapaDatos.Metodos
                 command.Parameters.AddWithValue("@ID_MARCA", id_marca);
                 command.Parameters.AddWithValue("@DESCRIPCION", descripcion);
                 command.Parameters.AddWithValue("@PRECIO", precio);
+                command.Parameters.AddWithValue("@STOCK", stock);
                 //Se ejecuta el comando
                 command.ExecuteNonQuery();
                 //Se cierra la conexión a la base de datos
@@ -154,5 +150,101 @@ namespace CapaDatos.Metodos
                 return false;
             }
         }
+
+        //Metodo para buscar producto por id
+        public DataTable BuscarProducto(int codigo)
+        {
+            try
+            {
+                //Se crea el comando SQL para buscar un producto por su descripción
+                SqlCommand command = new SqlCommand();
+                //Se crea la tabla para almacenar los datos
+                DataTable dt = new DataTable();
+                //Se abre la conexión a la base de datos
+                command.Connection = connection.OpenConnection();
+                //Se crea la consulta SQL
+                command.CommandText = "SP_BUSCAR_PRODUCTO";
+                //Se establece el tipo de comando
+                command.CommandType = CommandType.StoredProcedure;
+                //Se agrega el parámetro al comando
+                command.Parameters.AddWithValue("@CODIGO", codigo);
+                //Se ejecuta el comando y almacena los datos en la tabla
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                da.Fill(dt);
+                //Se cierra la conexión a la base de datos
+                connection.CloseConnection();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                //Se imprime el mensaje de la excepción
+                string error = ex.Message;
+                Console.WriteLine(error);
+                return null;
+            }
+        }
+
+        //Metodo para actualizar stock de productos
+        public bool ActualizarStock(int id_producto, int cantidad)
+        {
+            try
+            {
+                //Se crea el comando SQL para actualizar el stock de un producto
+                SqlCommand command = new SqlCommand();
+                //Se abre la conexión a la base de datos
+                command.Connection = connection.OpenConnection();
+                //Se crea la consulta SQL
+                command.CommandText = "SP_ACTUALIZAR_STOCK_PRODUCTO";
+                //Se establece el tipo de comando
+                command.CommandType = CommandType.StoredProcedure;
+                //Se agregan los parámetros necesarios
+                command.Parameters.AddWithValue("@ID_PRODUCTO", id_producto);
+                command.Parameters.AddWithValue("@CANTIDAD", cantidad);
+                //Se ejecuta el comando
+                command.ExecuteNonQuery();
+                //Se cierra la conexión a la base de datos
+                connection.CloseConnection();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                //Se imprime el mensaje de la excepción
+                string error = ex.Message;
+                Console.WriteLine(error);
+                return false;
+            }
+        }
+
+        //Metodo para restaurar stock producto
+        public bool RestaurarStock(int id_producto, int cantidad)
+        {
+            try
+            {
+                //Se crea el comando SQL para restaurar el stock de un producto
+                SqlCommand command = new SqlCommand();
+                //Se abre la conexión a la base de datos
+                command.Connection = connection.OpenConnection();
+                //Se crea la consulta SQL
+                command.CommandText = "SP_RESTAURAR_STOCK_PRODUCTO";
+                //Se establece el tipo de comando
+                command.CommandType = CommandType.StoredProcedure;
+                //Se agregan los parámetros necesarios
+                command.Parameters.AddWithValue("@ID_PRODUCTO", id_producto);
+                command.Parameters.AddWithValue("@CANTIDAD", cantidad);
+                //Se ejecuta el comando
+                command.ExecuteNonQuery();
+                //Se cierra la conexión a la base de datos
+                connection.CloseConnection();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                //Se imprime el mensaje de la excepción
+                string error = ex.Message;
+                Console.WriteLine(error);
+                return false;
+            }
+        }
+
     }
 }

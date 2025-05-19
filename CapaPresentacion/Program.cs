@@ -17,9 +17,9 @@ namespace CapaPresentacion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //frmPrincipal es el formulario principal de la aplicación
-           // Application.Run(new frmCategoria());
-           //Application.Run(new Formularios.FrmPrincipal());
-           Application.Run(new LOGIN());
+           //Application.Run(new frmCategoria());
+           Application.Run(new Formularios.FrmPrincipal());
+           //Application.Run(new LOGIN());
         }
     }
 }

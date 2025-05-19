@@ -19,10 +19,10 @@ namespace CapaPresentacion.Formularios
 
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
         { 
-            frmCategoria frm =  frmCategoria.ventana_unica();
+            FormCategoria frm = FormCategoria.ventana_unica();
             if (frm.IsDisposed)
             {
-                frm = new frmCategoria();
+                frm = new FormCategoria();
             }
             frm.MdiParent = this;
             frm.Show();
@@ -51,6 +51,18 @@ namespace CapaPresentacion.Formularios
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void nuevaVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormVenta form = FormVenta.ventana_unica();
+            if (form.IsDisposed)
+            {
+                form = new FormVenta();
+            }
+            form.MdiParent = this;
+            form.Show();
+            form.BringToFront();
         }
     }
 }

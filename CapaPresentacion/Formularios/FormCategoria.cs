@@ -16,5 +16,16 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
         }
+
+        private static FormCategoria _instancia = null;
+        public static FormCategoria ventana_unica()
+        {
+            if (_instancia == null)
+            {
+                _instancia = new FormCategoria();
+                return _instancia;
+            }
+            return _instancia;
+        }
     }
 }

@@ -16,8 +16,6 @@ namespace CapaPresentacion.Formularios
     public partial class FormProductos : Form
     {
 
-        //Se instancia la clase de la entidad Producto
-        ClassProducto producto = new ClassProducto();
         //Crear Variable para almacenar los IDs
         int ID_Producto = 0;
 
@@ -56,22 +54,25 @@ namespace CapaPresentacion.Formularios
             //Se asigna al DataGridView el resultado del método ListarProductos
             dgvProducto.DataSource = obj.ListarProductos();
             //Se ocultan las columnas con ID
-            dgvProducto.Columns["ID_PRODUCTO"].Visible = false;
             dgvProducto.Columns["ID_MARCA"].Visible = false;
             dgvProducto.Columns["ID_CATEGORIA"].Visible = false;
 
             //Reemplazar el HeaderText de las columnas
+            dgvProducto.Columns["ID_PRODUCTO"].HeaderText = "Codigo";
             dgvProducto.Columns["DESCRIPCION"].HeaderText = "Descripción";
             dgvProducto.Columns["NOMBRE_MARCA"].HeaderText = "Marca";
             dgvProducto.Columns["NOMBRE_CATEGORIA"].HeaderText = "Categoría";
             dgvProducto.Columns["PRECIO"].HeaderText = "Precio";
+            dgvProducto.Columns["STOCK"].HeaderText = "Stock";
             dgvProducto.Columns["ESTADO"].HeaderText = "Estado";
 
             //Ajustar el tamaño de las columnas
+            dgvProducto.Columns["ID_PRODUCTO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dgvProducto.Columns["DESCRIPCION"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgvProducto.Columns["NOMBRE_MARCA"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgvProducto.Columns["NOMBRE_CATEGORIA"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgvProducto.Columns["PRECIO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvProducto.Columns["STOCK"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgvProducto.Columns["ESTADO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
 
             //Bloquear la edición de las celdas
@@ -120,6 +121,8 @@ namespace CapaPresentacion.Formularios
             txtDescripcion.Enabled = false;
             txtPrecio.Text = "";
             txtPrecio.Enabled = false;
+            txtStock.Text = "";
+            txtStock.Enabled = false;
             cmbCategoria.SelectedIndex = -1;
             cmbCategoria.Enabled = false;
             cmbMarca.SelectedIndex = -1;
@@ -140,6 +143,8 @@ namespace CapaPresentacion.Formularios
             txtDescripcion.Text = "";
             txtPrecio.Enabled = true;
             txtPrecio.Text = "";
+            txtStock.Enabled = true;
+            txtStock.Text = "";
             cmbCategoria.Enabled = true;
             cmbMarca.Enabled = true;
             btnGuardar.Enabled = true;
@@ -154,8 +159,10 @@ namespace CapaPresentacion.Formularios
             cmbMarca.SelectedValue = Convert.ToInt32(dgvProducto.CurrentRow.Cells["ID_MARCA"].Value);
             txtDescripcion.Text = dgvProducto.CurrentRow.Cells["DESCRIPCION"].Value.ToString();
             txtPrecio.Text = dgvProducto.CurrentRow.Cells["PRECIO"].Value.ToString();
+            txtStock.Text = dgvProducto.CurrentRow.Cells["STOCK"].Value.ToString();
             txtDescripcion.Enabled = true;
             txtPrecio.Enabled = true;
+            txtStock.Enabled = true;
             cmbCategoria.Enabled = true;
             cmbMarca.Enabled = true;
             btnGuardar.Enabled = true;
@@ -172,11 +179,28 @@ namespace CapaPresentacion.Formularios
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(ID_Producto > 0)
+            //inicializar la entidad Producto
+            ClassProducto obj = new ClassProducto();
+            //Validar que los TextBox no estén vacíos
+            if (string.IsNullOrEmpty(txtDescripcion.Text) || string.IsNullOrEmpty(txtPrecio.Text) || string.IsNullOrEmpty(txtStock.Text))
             {
-                   //Se llama al método ModificarProducto de la clase ClassProducto
-                if (producto.ModificarProducto(ID_Producto, Convert.ToInt32(cmbCategoria.SelectedValue), Convert.ToInt32(cmbMarca.SelectedValue), txtDescripcion.Text, Convert.ToDecimal(txtPrecio.Text)))
+                MessageBox.Show("Por favor, complete todos los campos.");
+                return;
+            }
+            //Se asigna el valor de los TextBox a las propiedades de la entidad Producto
+            obj.Descripcion = txtDescripcion.Text;
+            obj.Precio = Convert.ToDecimal(txtPrecio.Text);
+            obj.Stock = Convert.ToInt32(txtStock.Text);
+            obj.ID_Categoria = Convert.ToInt32(cmbCategoria.SelectedValue);
+            obj.ID_Marca = Convert.ToInt32(cmbMarca.SelectedValue);
+            if (ID_Producto > 0)
+            {
+                //Se asigna el valor del estado a la propiedad Id_Producto
+                obj.ID_Producto = ID_Producto;
+                //Se llama al método ModificarProducto de la clase ClassProducto
+                if (obj.ModificarProducto(obj))
                 {
+
                     MessageBox.Show("Producto Modificado Correctamente");
                 }
                 else
@@ -187,7 +211,7 @@ namespace CapaPresentacion.Formularios
             else
             {
                 //Se llama al método InsertarProducto de la clase ClassProducto
-                if (producto.InsertarProducto(Convert.ToInt32(cmbCategoria.SelectedValue), Convert.ToInt32(cmbMarca.SelectedValue), txtDescripcion.Text, Convert.ToDecimal(txtPrecio.Text)))
+                if (obj.InsertarProducto(obj))
                 {
                     MessageBox.Show("Producto Guardado Correctamente");
                 }
@@ -202,12 +226,22 @@ namespace CapaPresentacion.Formularios
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            //Se instancia la clase de la entidad Producto
+            ClassProducto obj = new ClassProducto();
+            //Se valida que el ID_Producto sea mayor a 0
+            if (ID_Producto <= 0)
+            {
+                MessageBox.Show("Seleccione un Producto para eliminar");
+                return;
+            }
+            //Se asigna el valor del ID_Producto a la propiedad ID_Producto
+            obj.ID_Producto = ID_Producto;
             //Mostrar un mensaje de confirmación
             DialogResult result = MessageBox.Show("¿Está seguro que desea eliminar el Producto?", "Eliminar Producto", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 //Se llama al método EliminarProducto de la clase ClassProducto
-                if (producto.EliminarProducto(ID_Producto))
+                if (obj.EliminarProducto(obj))
                 {
                     MessageBox.Show("Producto Eliminado Correctamente");
                 }
@@ -224,6 +258,19 @@ namespace CapaPresentacion.Formularios
         {
             //Validar que solo se ingresen números y el punto
             if (Char.IsDigit(e.KeyChar) || e.KeyChar == '.' || e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtStock_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Validar que solo se ingresen números
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
             {
                 e.Handled = false;
             }
