@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capadatos\\metodos\\cdventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\metodos\\cdventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\formularios\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capanegocio\\entidades\\classventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\entidades\\classventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\formularios\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capanegocio\\entidades\\classcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\formularios\\formventa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\formventa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\formularios\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capanegocio\\entidades\\classcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\entidades\\classcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capanegocio\\entidades\\classventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\entidades\\classventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capadatos\\metodos\\cdventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\metodos\\cdventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capapresentacion\\formularios\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capadatos\\metodos\\cdcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capadatos\\metodos\\cdcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\metodos\\cdcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,15 +59,11 @@
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capapresentacion\\formularios\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capanegocio\\entidades\\classmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\entidades\\classmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -63,7 +71,7 @@
       "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\classconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\formularios\\formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capapresentacion\\formularios\\formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -71,15 +79,11 @@
       "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\formularios\\formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1FF5F1A1-3D2D-4918-AF15-0AB81DF7C927}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capadatos\\metodos\\cdusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capadatos\\metodos\\cdusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEDF2EF0-A91C-4A46-9788-98F321C4D459}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\metodos\\cdusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\oaleman\\documents\\github\\crud_wfrm\\capanegocio\\entidades\\classusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\capanegocio\\entidades\\classusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{795AF943-2C2B-4753-BAC8-5831745170EB}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\entidades\\classusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -89,35 +93,47 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormVenta.cs",
-              "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormVenta.cs",
-              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs",
-              "RelativeToolTip": "CapaPresentacion\\Formularios\\FormVenta.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAArwGcAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FrmPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FrmPrincipal.cs [Design]",
+              "RelativeToolTip": "CapaPresentacion\\Formularios\\FrmPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T17:42:09.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T13:52:00.267Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FormVenta.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.Designer.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormVenta.Designer.cs",
+              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.Designer.cs",
+              "RelativeToolTip": "CapaPresentacion\\Formularios\\FormVenta.Designer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwG0CAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T13:21:04.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CDVenta.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaDatos\\Metodos\\CDVenta.cs",
               "RelativeDocumentMoniker": "CapaDatos\\Metodos\\CDVenta.cs",
               "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaDatos\\Metodos\\CDVenta.cs",
               "RelativeToolTip": "CapaDatos\\Metodos\\CDVenta.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wEQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T16:28:29.206Z",
               "EditorCaption": ""
@@ -125,19 +141,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FormVenta.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormVenta.cs",
+              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs [Design]",
+              "RelativeToolTip": "CapaPresentacion\\Formularios\\FormVenta.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:02:28.457Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClassVenta.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaNegocio\\Entidades\\ClassVenta.cs",
               "RelativeDocumentMoniker": "CapaNegocio\\Entidades\\ClassVenta.cs",
               "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaNegocio\\Entidades\\ClassVenta.cs",
               "RelativeToolTip": "CapaNegocio\\Entidades\\ClassVenta.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAywBcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T16:06:01.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ClassCliente.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaNegocio\\Entidades\\ClassCliente.cs",
               "RelativeDocumentMoniker": "CapaNegocio\\Entidades\\ClassCliente.cs",
@@ -145,12 +173,11 @@
               "RelativeToolTip": "CapaNegocio\\Entidades\\ClassCliente.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAYwDUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:02:41.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T16:02:41.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ClassProducto.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaNegocio\\Entidades\\ClassProducto.cs",
               "RelativeDocumentMoniker": "CapaNegocio\\Entidades\\ClassProducto.cs",
@@ -158,12 +185,11 @@
               "RelativeToolTip": "CapaNegocio\\Entidades\\ClassProducto.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAmwIAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:45:59.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T00:45:59.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Program.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Program.cs",
@@ -171,12 +197,11 @@
               "RelativeToolTip": "CapaPresentacion\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:22:44.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T03:22:44.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "LOGIN.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\LOGIN.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\LOGIN.cs",
@@ -189,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "LOGIN.cs [Design]",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\LOGIN.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\LOGIN.cs",
@@ -201,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CDProducto.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaDatos\\Metodos\\CDProducto.cs",
               "RelativeDocumentMoniker": "CapaDatos\\Metodos\\CDProducto.cs",
@@ -209,12 +234,11 @@
               "RelativeToolTip": "CapaDatos\\Metodos\\CDProducto.cs",
               "ViewState": "AgIAALUAAAAAAAAAAAAkwPYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:49:06.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T00:49:06.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "CDCliente.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaDatos\\Metodos\\CDCliente.cs",
               "RelativeDocumentMoniker": "CapaDatos\\Metodos\\CDCliente.cs",
@@ -222,12 +246,11 @@
               "RelativeToolTip": "CapaDatos\\Metodos\\CDCliente.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAQwEEAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T18:01:00.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T18:01:00.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FormProductos.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormProductos.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormProductos.cs",
@@ -235,12 +258,11 @@
               "RelativeToolTip": "CapaPresentacion\\Formularios\\FormProductos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:35:37.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T00:35:37.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ClassMarca.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaNegocio\\Entidades\\ClassMarca.cs",
               "RelativeDocumentMoniker": "CapaNegocio\\Entidades\\ClassMarca.cs",
@@ -248,12 +270,11 @@
               "RelativeToolTip": "CapaNegocio\\Entidades\\ClassMarca.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:52:59.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T00:52:59.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "FrmPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FrmPrincipal.cs",
@@ -266,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ClassConnection.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaDatos\\ClassConnection.cs",
               "RelativeDocumentMoniker": "CapaDatos\\ClassConnection.cs",
@@ -274,12 +295,11 @@
               "RelativeToolTip": "CapaDatos\\ClassConnection.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:20:41.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T03:20:41.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "CDUsuario.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaDatos\\Metodos\\CDUsuario.cs",
               "RelativeDocumentMoniker": "CapaDatos\\Metodos\\CDUsuario.cs",
@@ -287,12 +307,11 @@
               "RelativeToolTip": "CapaDatos\\Metodos\\CDUsuario.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T02:11:09.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:11:09.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FormCategoria.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormCategoria.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormCategoria.cs",
@@ -300,24 +319,22 @@
               "RelativeToolTip": "CapaPresentacion\\Formularios\\FormCategoria.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAYwBMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T02:18:03.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:18:03.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FormCategoria.cs [Design]",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormCategoria.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormCategoria.cs",
               "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormCategoria.cs [Design]",
               "RelativeToolTip": "CapaPresentacion\\Formularios\\FormCategoria.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T17:13:12.02Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-12T17:13:12.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ClassUsuario.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaNegocio\\Entidades\\ClassUsuario.cs",
               "RelativeDocumentMoniker": "CapaNegocio\\Entidades\\ClassUsuario.cs",
@@ -325,12 +342,11 @@
               "RelativeToolTip": "CapaNegocio\\Entidades\\ClassUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T02:11:51.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:11:51.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "FormProductos.Designer.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormProductos.Designer.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormProductos.Designer.cs",
@@ -338,8 +354,7 @@
               "RelativeToolTip": "CapaPresentacion\\Formularios\\FormProductos.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T02:03:59.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T02:03:59.35Z"
             }
           ]
         }
@@ -349,42 +364,31 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "c9de9b02-8586-4dc2-8354-bb0fdf05e803",
-        "Display": 1,
-        "X": 350,
-        "Y": -8,
-        "Width": 1364,
-        "Height": 718,
+        "Id": "b4960e44-58a6-4928-97f9-01a34c22bea4",
+        "Display": 2,
+        "X": 240,
+        "Y": 157,
+        "Width": 1585,
+        "Height": 755,
         "WindowState": 2
       },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormProductos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormProductos.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormProductos.cs",
-              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormProductos.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\Formularios\\FormProductos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:35:26.916Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormVenta.cs [Design]",
+              "Title": "FormVenta.cs",
               "DocumentMoniker": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\Formularios\\FormVenta.cs",
-              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\Formularios\\FormVenta.cs [Design]",
+              "ToolTip": "C:\\Users\\oaleman\\Documents\\GitHub\\crud_wfrm\\CapaPresentacion\\Formularios\\FormVenta.cs",
+              "RelativeToolTip": "CapaPresentacion\\Formularios\\FormVenta.cs",
+              "ViewState": "AgIAAOkBAAAAAAAAAAAawN4BAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:39:39.076Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-17T17:42:09.155Z",
+              "EditorCaption": ""
             }
           ]
         }

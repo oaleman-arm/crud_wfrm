@@ -23,6 +23,8 @@ namespace CapaDatos.Metodos
                 DateTime fecha_venta = Convert.ToDateTime(fecha);
                 //Se crea el comando SQL para insertar una venta
                 SqlCommand command = new SqlCommand();
+                SqlParameter idVentaParam = new SqlParameter("@ID_VENTA", SqlDbType.Int);
+                idVentaParam.Direction = ParameterDirection.Output;
                 //Se abre la conexión a la base de datos
                 command.Connection = connection.OpenConnection();
                 //Se crea la consulta SQL
@@ -37,23 +39,35 @@ namespace CapaDatos.Metodos
                 command.Parameters.AddWithValue("@TOTAL", total);
                 command.Parameters.AddWithValue("@ID_CLIENTE", id_cliente);
                 command.Parameters.AddWithValue("@ID_USUARIO", id_usuario);
-                //Se ejecuta el comando y obtiene el ID de la venta insertada
-                int id_venta = Convert.ToInt32(command.ExecuteScalar());
+                command.Parameters.Add(idVentaParam);
+                // Ejecutar el comando
+                command.ExecuteNonQuery();
+                // Obtener el ID de la venta registrada
+                int id_venta = (int)command.Parameters["@ID_VENTA"].Value;
+                //Cerrar la conexión
+                connection.CloseConnection();
+                //Se verifica si el ID de la venta es mayor a 0
+                if (id_venta <= 0)
+                {
+                    return false;
+                }
+                //Se abre la conexión a la base de datos
+                connection.OpenConnection();
                 //Se inserta los detalles de la venta
                 foreach (DataRow row in dt.Rows)
                 {
                     //Calcular total de cada detalle de venta con descuento
-                    decimal total_detalle = Convert.ToDecimal(row["cantidad"]) * Convert.ToDecimal(row["precio"]) - Convert.ToDecimal(row["descuento"]);
+                    decimal total_detalle = Convert.ToDecimal(row["Cantidad"]) * Convert.ToDecimal(row["Precio"]) - Convert.ToDecimal(row["Descuento"]);
                     //Se crea el comando SQL para insertar un detalle de venta
                     SqlCommand detailCommand = new SqlCommand();
                     detailCommand.Connection = connection.OpenConnection();
                     detailCommand.CommandText = "SP_INSERTAR_DETALLE_VENTA";
                     detailCommand.CommandType = CommandType.StoredProcedure;
                     detailCommand.Parameters.AddWithValue("@ID_VENTA", id_venta);
-                    detailCommand.Parameters.AddWithValue("@ID_PRODUCTO", row["id_producto"]);
-                    detailCommand.Parameters.AddWithValue("@CANTIDAD", row["cantidad"]);
-                    detailCommand.Parameters.AddWithValue("@PRECIO", row["precio"]);
-                    detailCommand.Parameters.AddWithValue("@DESCUENTO", row["descuento"]);
+                    detailCommand.Parameters.AddWithValue("@ID_PRODUCTO", row["ID_Producto"]);
+                    detailCommand.Parameters.AddWithValue("@CANTIDAD", row["Cantidad"]);
+                    detailCommand.Parameters.AddWithValue("@PRECIO", row["Precio"]);
+                    detailCommand.Parameters.AddWithValue("@DESCUENTO", row["Descuento"]);
                     detailCommand.Parameters.AddWithValue("@TOTAL", total_detalle);
                     detailCommand.ExecuteNonQuery();
                     connection.CloseConnection();
